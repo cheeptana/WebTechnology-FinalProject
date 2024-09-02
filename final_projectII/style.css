@@ -1,0 +1,491 @@
+  :root {
+      --primary-color: #74E291;
+      --secondary-color: #211C6A;
+      --font-family: sans-serif;
+  }
+
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+
+
+
+  body {
+      font-family: var(--font-family);
+      color: var(--secondary-color);
+      background-color: var(--primary-color);
+      line-height: 1.6;
+  }
+
+  a {
+      text-decoration: none;
+      color: var(--secondary-color);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+      font-weight: bold;
+      margin-bottom: 10px;
+  }
+
+  p {
+      margin-bottom: 10px;
+  }
+
+  header {
+      background-color: var(--secondary-color);
+      padding: 1px 0;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  header table {
+      width: 100%;
+  }
+
+  header img {
+      height: 100px;
+      width: 150px;
+  }
+
+  header h1 {
+      margin-top: 0;
+      margin-bottom: 5px;
+  }
+
+  header ul {
+      display: flex;
+      justify-content: space-around;
+  }
+
+  header ul li {
+      margin: 0;
+  }
+
+  header ul li a {
+      padding: 10px;
+      color: var(--primary-color);
+  }
+
+  header ul li a:hover {
+      color: #66cc66;
+  }
+
+  main {
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin: 20px 0;
+      padding: 20px;
+  }
+
+  .promotion-card,
+  .product-card,
+  .service-card,
+  .testimonial {
+      transition: transform 0.3s ease-in-out;
+  }
+
+  .promotion-card:hover,
+  .product-card:hover,
+  .service-card:hover,
+  .testimonial:hover {
+      transform: scale(1.05);
+  }
+
+  .hero {
+      background-image: url("./img/bg_img1.jpg");
+      background-size: cover;
+      background-position: center;
+      height: 300px;
+      padding: 50px 20px;
+  }
+
+  .hero h2 {
+      color: var(--secondary-color);
+      margin-top: 0;
+  }
+
+  .hero p {
+      color: var(--secondary-color);
+      margin-bottom: 20px;
+  }
+
+  .hero a {
+      background-color: var(--secondary-color);
+      color: var(--primary-color);
+      padding: 10px 20px;
+      border-radius: 5px;
+  }
+
+  .hero a:hover {
+      background-color: #66cc66;
+  }
+
+  .promotion {
+      margin-top: 30px;
+  }
+
+  .promotion h2 {
+      margin-bottom: 20px;
+  }
+
+  .promotion-list {
+      display: flex;
+      flex-wrap: wrap;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 10px;
+  }
+
+  .promotion-card {
+      height: 200px;
+      width: 400px;
+      margin: 10px;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      text-align: center;
+  }
+
+  .promotion-card img {
+      height: 160px;
+      width: 100%;
+      margin-bottom: 5px;
+  }
+
+  .product {
+      margin-top: 30px;
+  }
+
+  .sproduct h2 {
+      margin-bottom: 20px;
+  }
+
+  .product-list {
+      display: flex;
+      flex-wrap: wrap;
+  }
+
+  .product-card {
+      width: 20%;
+      margin: 15px;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      text-align: center;
+  }
+
+  .product-card img {
+      width: 100%;
+      height: 15cap;
+      margin-bottom: 0;
+  }
+
+  .product-card h3 {
+      margin-bottom: 5px;
+  }
+
+  .product-card p {
+      margin-bottom: 10px;
+  }
+
+
+  .services {
+      margin-top: 30px;
+  }
+
+  .services h2 {
+      margin-bottom: 20px;
+  }
+
+  .services-list {
+      display: flex;
+      flex-wrap: wrap;
+  }
+
+  .service-card {
+      width: 20%;
+      margin: 15px;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      text-align: center;
+  }
+
+  .service-card img {
+      width: 100%;
+      height: 15cap;
+      margin-bottom: 0;
+  }
+
+  .service-card h3 {
+      margin-bottom: 5px;
+  }
+
+  .service-card p {
+      margin-bottom: 10px;
+  }
+
+  .testimonials {
+      margin-top: 30px;
+  }
+
+  .testimonials h2 {
+      margin-bottom: 20px;
+  }
+
+  .testimonials-list {
+      display: flex;
+      flex-wrap: wrap;
+  }
+
+  .testimonial {
+      width: 33%;
+      margin: 10px;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+  }
+
+  .testimonial img {
+      width: 50px;
+      margin-right: 10px;
+      float: left;
+  }
+
+  .testimonial blockquote {
+      font-style: italic;
+      margin-bottom: 10px;
+  }
+
+  .testimonial p {
+      margin-bottom: 0;
+  }
+
+  .contact {
+      margin-top: 30px;
+  }
+
+  .contact h2 {
+      margin-bottom: 20px;
+  }
+
+  .contact-form {
+      width: 50%;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+  }
+
+  .contact-form textarea {
+      height: 100px;
+  }
+
+  .contact-form button {
+      background-color: var(--secondary-color);
+      color: var(--primary-color);
+      padding: 10px 20px;
+      border-radius: 5px;
+  }
+
+  .contact-form button:hover {
+      background-color: #66cc66;
+  }
+
+  .contact-info {
+      margin-top: 30px;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+  }
+
+  .contact-info p {
+      margin-bottom: 10px;
+  }
+
+  .contact-info iframe {
+      width: 100%;
+      height: 300px;
+      border: 0;
+  }
+
+  footer {
+      background-color: var(--primary-color);
+      color: var(--secondary-color);
+      padding: 20px;
+      text-align: center;
+  }
+
+  footer ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+  }
+
+  footer ul li {
+      margin: 0 10px;
+  }
+
+  footer ul li a {
+      color: var(--secondary-color);
+  }
+
+  footer ul li a:hover {
+      color: #66cc66;
+  }
+
+  @media (max-width: 768px) {
+      header ul {
+          display: block;
+      }
+
+      .promotion-list,
+      .services-list,
+      .testimonials-list {
+          display: block;
+      }
+  }
+
+  .hero-text h2 {
+      animation: fade-in 2s ease-in;
+  }
+
+  @keyframes fade-in {
+      from {
+          opacity: 0;
+      }
+
+      to {
+          opacity: 1;
+      }
+  }
+
+  .contact-form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+      width: 80%;
+  }
+
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+form {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold
+  }
+
+  input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+  }
+
+  input,
+  textarea {
+    width: 80%;
+    margin-bottom: 10px;
+  }
+  
+  input[type="submit"] {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #66cc66;
+  }
+  p {
+      margin-bottom: 10px;
+  }
+.login-form {
+    width: 300px;
+    margin: 0 auto;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left; /* เพิ่มบรรทัดนี้เพื่อจัดข้อความให้อยู่ฝั่งซ้าย */
+}
+
+.login-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold; /* เพิ่มบรรทัดนี้เพื่อทำให้ข้อความน่าสัมผัสมากขึ้น */
+}
+
+.login-form input {
+    width: 100%;
+    padding: 8px;
+    
+}
+
+.login-form button {
+    background-color: #4caf50;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%; /* เพิ่มบรรทัดนี้เพื่อทำให้ปุ่มเต็มความกว้าง */
+}
+
+.login-form button:hover {
+    background-color: #45a049; /* เพิ่มการเปลี่ยนสีเมื่อชี้ไป */
+}
+
+table.employee-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px 0;
+  }
+  
+  table.employee-table th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  table.employee-table th {
+    text-align: left;
+    background-color: #f2f2f2;
+  }
+  
+  table.employee-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  .setimgbox img{
+    width: 100px;
+    height: 100px;
+  }
